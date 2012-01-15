@@ -22,7 +22,7 @@ end
 group :production do
   # gems specifically for Heroku go here
   gem "pg"
-  gem 'therubyracer-heroku'
+  gem 'therubyracer', '~> 0.9.3.beta1'
 end
 
 gem 'jquery-rails'
