@@ -19,3 +19,70 @@ blockquote:before, blockquote:after, q:before, q:after {content:'';}
 blockquote, q {quotes:"" "";}
 a img {border:none;}
 :focus {outline:0;}
+
+a {
+	color: white;
+}
+
+body {
+	background-image: url('/assets/background.jpg');
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+	width: 922px;
+	margin: 0 auto;
+	border: 1px solid red;
+}
+
+div.header-container {
+	background-image: url('/assets/woodtop_background.jpg');
+	height: 291px;
+}
+
+header img {
+	float: left;
+}
+
+nav {
+  float: right;
+  border: 1px solid red;
+  margin: 78px 100px 0 0;
+}
+
+nav {
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+div.main-wrapper {
+	margin: 191px auto;
+	width: 922px;
+	border: 1px solid red;
+	background-color: #fff8e9;
+}
+
+div.inner-wrapper {
+	margin: 20px 20px 20px 20px;
+	border: 1px solid red;
+}
+
+
+
+
