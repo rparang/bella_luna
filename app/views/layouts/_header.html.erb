@@ -1,14 +1,15 @@
 <header>
-	<% logo = image_tag("bella_logo.png", :alt => "Sample App", :class => "round") %>
+	<% logo = image_tag("bella_logo.png", :alt => "Bella Luna Restaurant", :class => "logo") %>
 	<%= link_to logo, root_path %>
+	<div class="reservations">RESERVATIONS: (865) 247-7405</div>
     <nav class="round">
       <ul>
         <li><%= link_to "Home", root_path %></li>
-		<li><%= link_to "About", about_path %></li>
-		<li><%= link_to "Home", root_path %></li>
-		<li><%= link_to "About", about_path %></li>
-		<li><%= link_to "Home", root_path %></li>
-		<li><%= link_to "About", about_path %></li>
+		<li><%= link_to "Menus", root_path %></li>
+		<li><%= link_to "Catering", root_path %></li>
+		<li><%= link_to "Location & Hours", root_path %></li>
+		<li><%= link_to "Events", root_path %></li>
+		<li><%= link_to "Contact Us", root_path %></li>
       </ul>
     </nav>
 </header>
