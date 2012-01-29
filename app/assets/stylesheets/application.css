@@ -32,16 +32,24 @@ body {
 h1 {
 	font-family: 'Tangerine', serif;
 	font-weight: bold;
-	font-size: 40px;
+	font-size: 44px;
 	color: #5c3b1c;
 	text-shadow: 0px 1px 0px #ffffff;
 }
 
 h2 {
+	font-family: 'Tangerine', serif;
+	font-weight: bold;
+	color: #5c3b1c;
+	font-size: 36px;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+h3{
 	font-family: 'Jura', sans-serif;
 	font-weight: bold;
-	color: #656565;
-	font-size: 20px;
+	color: #545454;
+	font-size: 16px;
 	text-shadow: 0px 1px 0px #ffffff;
 }
 
@@ -68,16 +76,26 @@ div.header-container {
 }
 
 div.reservations {
-	color: white;
+	color: #ececec;
 	font-family: 'Jura', sans-serif;
 	float: right;
-	margin: 30px 37px 0 0;
-	border: 1px solid red;
+	margin: 20px 37px 0 0;
 }
 
 div.find-us-on {
-	float: right;
-	display: inline;
+	float: left;
+	margin-top: 15px;
+}
+
+div.find-us-on-label {
+	float: left;
+	margin: 15px 0 0 577px;
+	color: #ececec;
+	font-size: 10px;
+}
+
+img.social{
+	margin-left: 5px;
 }
 
 header img {
@@ -92,7 +110,7 @@ nav {
   float: right;
   border-top: 1px dashed #b4974b;
   border-bottom: 1px dashed #b4974b;
-  margin: 35px 20px 0 0;
+  margin: 30px 20px 0 0;
 }
 
 nav {
@@ -219,6 +237,32 @@ div.pasta, div.desserts {
 div.clear {
 	clear: both;
 }
+
+
+/*-- Menu Items --*/
+
+div.menu {
+	xborder: 1px solid red;
+	margin: 25px;
+}
+
+div.menu-wrapper{
+	margin: 30px 0 0 200px;
+	padding: 20px 0 20px 0;
+	border-top: 2px dotted #B4974B;
+	border-bottom: 2px dotted #B4974B;
+	width: 500px;
+}
+
+div.menu-item {
+	xborder: 1px solid red;
+	margin-bottom: 15px;
+}
+
+div.menu-item p {
+	font-style: italic;
+}
+
 
 div.footer {
 	width: 922px;

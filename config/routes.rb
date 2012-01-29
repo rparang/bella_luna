@@ -1,9 +1,12 @@
 BellaLuna::Application.routes.draw do
  
+  resources :menus
+
   root :to => 'pages#home'
  
   #get "pages/home"
   match '/about',   :to => 'pages#about'
+  #match '/menu',    :to => 'pages#menu'
   
 
   # The priority is based upon order of creation:

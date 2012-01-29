@@ -7,11 +7,11 @@
 	<%= link_to logo, root_path %>
 	
 	
-
+	<div class="find-us-on-label">Find us on</div>
 	<div class="find-us-on">
-		<%= link_to yelp, root_path %>
-		<%= link_to facebook, root_path %>
-		<%= link_to twitter, root_path %>
+		<%= link_to yelp, "http://www.yelp.com/biz/bella-luna-knoxville", :target => "_blank" %>
+		<%= link_to facebook, "http://www.facebook.com/pages/Bella-Luna-Restaurant/112371618847312", :target => "_blank" %>
+		<%= link_to twitter, "https://twitter.com/BellaLunaKnox", :target => "_blank" %>
 	</div>
 	<div class="reservations">
 		
@@ -21,11 +21,11 @@
     <nav class="round">
       <ul>
         <li><%= link_to "Home", root_path %></li>
-		<li><%= link_to "Menus", root_path %></li>
+		<li><%= link_to "Menus", menus_path %></li>
 		<li><%= link_to "Catering", root_path %></li>
 		<li><%= link_to "Location & Hours", root_path %></li>
 		<li><%= link_to "Events", root_path %></li>
-		<li><%= link_to "Contact Us", root_path %></li>
+		<li><%= link_to "About Us", about_path %></li>
       </ul>
     </nav>
 </header>
