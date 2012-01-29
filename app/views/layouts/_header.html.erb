@@ -1,7 +1,23 @@
 <header>
 	<% logo = image_tag("bella_logo.png", :alt => "Bella Luna Restaurant", :class => "logo") %>
+	<% yelp = image_tag("yelp.png", :alt => "Find us on Yelp", :class => "social") %>
+	<% facebook = image_tag("facebook.png", :alt => "Find us on Facebook", :class => "social") %>
+	<% twitter = image_tag("twitter.png", :alt => "Find us on Twitter", :class => "social") %>
+	
 	<%= link_to logo, root_path %>
-	<div class="reservations">RESERVATIONS: (865) 247-7405</div>
+	
+	
+
+	<div class="find-us-on">
+		<%= link_to yelp, root_path %>
+		<%= link_to facebook, root_path %>
+		<%= link_to twitter, root_path %>
+	</div>
+	<div class="reservations">
+		
+		RESERVATIONS: (865) 247-7405
+		
+	</div>
     <nav class="round">
       <ul>
         <li><%= link_to "Home", root_path %></li>

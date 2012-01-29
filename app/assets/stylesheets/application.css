@@ -72,6 +72,12 @@ div.reservations {
 	font-family: 'Jura', sans-serif;
 	float: right;
 	margin: 30px 37px 0 0;
+	border: 1px solid red;
+}
+
+div.find-us-on {
+	float: right;
+	display: inline;
 }
 
 header img {
