@@ -1,4 +1,4 @@
-<div class="menu">
+<div class="body-wrapper">
 	
 <h1>Our Menu</h1>
 
@@ -26,7 +26,13 @@
 <div class="menu-item">
 	<h3><%= menu.name %></h3>
 	<p><%= menu.description %></p>
-	<p><%= menu.price_small %></p>
+	
+	<% if menu.price_large.blank? %>
+		<p><%= menu.price_small.to_i %></p>
+	<% else %>	
+		<p>small <%= menu.price_small.to_i %></p>
+		<p>large <%= menu.price_large.to_i %></p>
+	<% end %>
 </div>
 <% end %>
 
@@ -36,7 +42,13 @@
 <div class="menu-item">
 	<h3><%= menu.name %></h3>
 	<p><%= menu.description %></p>
-	<p><%= menu.price_small %></p>
+	
+	<% if menu.price_large.blank? %>
+		<p><%= menu.price_small.to_i %></p>
+	<% else %>	
+		<p>small <%= menu.price_small.to_i %></p>
+		<p>large <%= menu.price_large.to_i %></p>
+	<% end %>
 </div>
 <% end %>
 
@@ -46,7 +58,13 @@
 <div class="menu-item">
 	<h3><%= menu.name %></h3>
 	<p><%= menu.description %></p>
-	<p><%= menu.price_small %></p>
+	
+	<% if menu.price_large.blank? %>
+		<p><%= menu.price_small.to_i %></p>
+	<% else %>	
+		<p>small <%= menu.price_small.to_i %></p>
+		<p>large <%= menu.price_large.to_i %></p>
+	<% end %>
 </div>
 <% end %>
 
@@ -57,7 +75,13 @@
 <div class="menu-item">
 	<h3><%= menu.name %></h3>
 	<p><%= menu.description %></p>
-	<p><%= menu.price_small %></p>
+	
+	<% if menu.price_large.blank? %>
+		<p><%= menu.price_small.to_i %></p>
+	<% else %>	
+		<p>small <%= menu.price_small.to_i %></p>
+		<p>large <%= menu.price_large.to_i %></p>
+	<% end %>
 </div>
 <% end %>
 
@@ -67,7 +91,13 @@
 <div class="menu-item">
 	<h3><%= menu.name %></h3>
 	<p><%= menu.description %></p>
-	<p><%= menu.price_small %></p>
+	
+	<% if menu.price_large.blank? %>
+		<p><%= menu.price_small.to_i %></p>
+	<% else %>	
+		<p>small <%= menu.price_small.to_i %></p>
+		<p>large <%= menu.price_large.to_i %></p>
+	<% end %>
 </div>
 <% end %>
 

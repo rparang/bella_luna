@@ -1,13 +1,31 @@
-	<div class="main-pic-container"><%= image_tag("site_3_03.png", :alt => "Sample App", :class => "main-pic") %></div>
-	<div class="inner-wrapper">
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.slideshow').cycle({
+		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+	});
+});
+</script>
+
+<div class="main-pic-container">
+<!--<%= image_tag("site_3_03.png", :alt => "Sample App", :class => "main-pic") %> -->
+
+<div class="slideshow">
+		<%= image_tag("hero_1.png", :alt => "Bruschetta", :class => "main-pic", :width => "879", :height => "417") %>
+		<%= image_tag("hero_2.png", :alt => "Bruschetta", :class => "main-pic", :width => "879", :height => "417") %>
+</div>
+
+	
+</div>
+  <div class="inner-wrapper">
     <div class="dine-left">
 	  <h1>Come Dine With Us</h1>
-	  <h3>The Food</h3>
-	  <p>Beef ribs ground round andouille, spare ribs pork fatback hamburger venison pork belly prosciutto turkey cow meatball. Frankfurter bresaola turducken beef, jerky pork belly filet mignon pork turkey. Chicken corned beef capicola, tongue shankle brisket fatback pork chop. Boudin ball tip tenderloin sirloin. Frankfurter ribeye meatloaf strip steak, cow shankle shank capicola meatball sausage.</p>
+	  <h3>The Food and Restaurant</h3>
+	  <p>Bella Luna Restaurant is the creation of two chefs who want to bring back the essence of Italian food… seasonally-prepared dishes made from the freshest local ingredients. It’s SIMPLE Italian food served with the same warmth and lightheartedness the Italian spirit is known for, all with a modern touch. From antipasti to dessert, each bite is created to delight the palate and each dish combines traditional flavors with contemporary cooking.</p>
 	</div>
     <div class="dine-center">
-      <h3>The Service</h3>
-	  <p>Beef ribs ground round andouille, spare ribs pork fatback hamburger venison pork belly prosciutto turkey cow meatball. Frankfurter bresaola turducken beef, jerky pork belly filet mignon pork turkey. Chicken corned beef capicola, tongue shankle brisket fatback pork chop. Boudin ball tip tenderloin sirloin. Frankfurter ribeye meatloaf strip steak, cow shankle shank capicola meatball sausage.</p>
+      <h3>The Atmosphere</h3>
+	  <p>The modern atmosphere comes to life with an inviting bar featuring an extensive wine list to complement any dish. Live jazz performances on Fridays and Saturdays and patio seating for those summer nights on Market Square complete the quintessential downtown vibe.<br /><br />Bella Luna brings casual elegance and fresh Italian food to downtown Knoxville the way it should be... Simple. Modern. Italian.
+	</p>
     </div>
     <div class="dine-right">
 	  <h1>We Cater</h1>
@@ -21,33 +39,29 @@
 	  <h1>View Our Menu</h1>
 	  <div class="starters">
 		<%= image_tag("JBP-3.png", :alt => "Sample App", :class => "starters-pic") %>
-	    <h2>Starters</h2>
-		<p>starters description</p>
+	    <h2>Antipasti</h2>
+		<p>Small plates</p>
 	  </div>
 	  <div class="salads">
 		<%= image_tag("JBP-4.png", :alt => "Sample App", :class => "salads-pic") %>
-	    <h2>Salads</h2>
-	    <p>starters description</p>
+	    <h2>Insalate e Zuppe</h2>
+	    <p>salad and soups</p>
 	  </div>
 	  <div class="pasta">
 		<%= image_tag("JBP-5.png", :alt => "Sample App", :class => "pasta-pic") %>
-	    <h2>Pasta</h2>
-		<p>starters description</p>
+	    <h2>Primi</h2>
+		<p>pasta</p>
 	  </div>
 	  <div class="desserts">
 		<%= image_tag("JBP-6.png", :alt => "Sample App", :class => "desserts-pic") %>
-	    <h2>Desserts</h2>
-		<p>starters description</p>
+	    <h2>Secundi</h2>
+		<p>entree</p>
 	  </div>
 	</div>
 	<div class="clear">
 	</div>
+  </div>
 </div>
-</div>
-<div class="footer">
-	<p>Copyright © 2012 Bella Luna - simple. modern. italian.<p>
-</div>
-
 
 
 

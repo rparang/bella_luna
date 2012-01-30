@@ -4,8 +4,12 @@ class PagesController < ApplicationController
     @title = "Home"
   end
   
-  def menu
+  def menus
     @title = "Menu"
+  end
+  
+  def location
+    @title = "Location"
   end
   
   def about

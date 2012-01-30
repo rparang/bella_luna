@@ -167,8 +167,9 @@ div.inner-wrapper {
 
 div.main-pic-container {
 	border: 1px dashed #b4974b;
-	padding: 7px 3px 3px 7px;
+	padding: 7px 3px 3px 10px;
 	margin: 10px;
+	height: 423px;
 }
 
 div.dine-left {
@@ -179,7 +180,7 @@ div.dine-left {
 
 div.dine-center {
 	float: left;
-	margin: 55px 0 0 20px;
+	margin: 65px 0 0 26px;
 	xborder: 1px solid red;
 	width: 275px;
 }
@@ -241,7 +242,7 @@ div.clear {
 
 /*-- Menu Items --*/
 
-div.menu {
+div.body-wrapper {
 	xborder: 1px solid red;
 	margin: 25px;
 }
@@ -273,4 +274,21 @@ div.footer {
 div.footer p {
 		color: #5c3b1c;
 }
+
+/*-- Location and Hours --*/
+
+div.location-left-col {
+	float: left;
+	xwidth: 200px;
+	xborder: 1px solid red;
+}
+
+div.location-right-col {
+	float: right;
+	border: 2px solid #c8b088;
+}
+
+
+
+
 
