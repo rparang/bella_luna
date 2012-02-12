@@ -35,23 +35,23 @@ body {
 }
 
 h1 {
-	font-family: 'Tangerine', serif;
+	font-family: 'Tangerine', 'Palatino Linotype', serif;
 	font-weight: bold;
-	font-size: 44px;
+	font-size: 36px;
 	color: #5c3b1c;
 	text-shadow: 0px 1px 0px #ffffff;
 }
 
 h2 {
-	font-family: 'Tangerine', serif;
+	font-family: 'Jura', 'Lucida Grande', sans-serif;
 	font-weight: bold;
 	color: #5c3b1c;
-	font-size: 36px;
+	font-size: 20px;
 	text-shadow: 0px 1px 0px #ffffff;
 }
 
 h3{
-	font-family: 'Jura', sans-serif;
+	font-family: 'Jura', 'Lucida Grande', sans-serif;
 	font-weight: bold;
 	color: #545454;
 	font-size: 16px;
@@ -60,14 +60,14 @@ h3{
 }
 
 li {
-	font-family: 'Jura', sans-serif;
-	font-size: 14px;
+	font-family: 'Jura', 'Lucida Grande', sans-serif;
+	font-size: 13px;
 }
 
 p {
-	font-family: 'Jura', sans-serif;
+	font-family: 'Jura', 'Lucida Grande', sans-serif;
 	color: #656565;
-	font-size: 14px;
+	font-size: 13px;
 	text-shadow: 0px 1px 0px #ffffff;
 }
 
@@ -140,6 +140,7 @@ nav ul li a {
   text-decoration: none;
   font-size: 20px;
   color: #ececec;
+  font-family: font-family: 'Jura', 'Lucida Grande', sans-serif;
 
 }
 
