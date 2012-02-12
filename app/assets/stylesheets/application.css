@@ -56,7 +56,7 @@ h3{
 	color: #545454;
 	font-size: 16px;
 	text-shadow: 0px 1px 0px #ffffff;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 li {
@@ -187,7 +187,7 @@ div.dine-left {
 
 div.dine-center {
 	float: left;
-	margin: 65px 0 0 26px;
+	margin: 53px 0 0 26px;
 	xborder: 1px solid red;
 	width: 275px;
 }
@@ -251,14 +251,14 @@ div.clear {
 /*-- Twitter and Press --*/
 
 div.twitter-container {
-	width: 420px;
+	width: 410px;
 	xborder: 1px solid red;
 }
 
 div.twitter-item {
 	float: left;
-	width: 420px;
-	border-top: 1px solid #D9D9D9;
+	width: 410px;
+	border-top: 1px dashed #B4974B;
 	padding-top: 14px;
 }
 
@@ -282,7 +282,7 @@ div.twitter-item span {
 
 div.press-container {
 	float: right;
-	width: 420px;
+	width: 410px;
 	xborder: 1px solid red;
 }
 
@@ -328,13 +328,26 @@ div.footer p {
 
 div.location-left-col {
 	float: left;
-	xwidth: 200px;
-	xborder: 1px solid red;
 }
 
 div.location-right-col {
 	float: right;
 	border: 2px solid #c8b088;
+}
+
+div.about-left-col {
+	float: left;
+}
+
+div.about-left-col img.about-pic {
+	float: right;
+	margin: 0 0 20px 20px;
+	padding: 7px;
+	background-color: #F8F8F8;
+	border: 1px solid #CCC;
+	transform: rotate(7deg);
+	   -moz-transform: rotate(7deg);
+	   -webkit-transform: rotate(7deg);
 }
 
 

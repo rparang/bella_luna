@@ -14,7 +14,6 @@ $(document).ready(function() {
 </div>
   <div class="inner-wrapper">
     <div class="dine-left">
-	<!--<h1><%= @twitter_timeline %></h1> -->
 	  <h1><%= t("home.header_one") %></h1>
 	  <h3><%= t("home.subheader_one") %></h3>
 	  <p><%= t("home.text_one") %></p>
@@ -32,7 +31,7 @@ $(document).ready(function() {
 	  <div class="starters">
 		<%= image_tag("JBP-3.png", :alt => "Sample App", :class => "starters-pic") %>
 	    <h2><%= t("home.menu_item_one") %></h2>
-		<p>Small plates</p>
+		<p>small plates</p>
 	  </div>
 	  <div class="salads">
 		<%= image_tag("JBP-4.png", :alt => "Sample App", :class => "salads-pic") %>
@@ -65,9 +64,9 @@ $(document).ready(function() {
 	    <h3>Twitter</h3>
 		<% 5.times do |i| %>
 	    <div class="twitter-item">
-	      <a href="#"><img src="<%= @twitter_timeline[i].user.profile_image_url %>" /></a>
+	      <a href="http://twitter.com/<%= @twitter_timeline[i].user.screen_name %>"><img src="<%= @twitter_timeline[i].user.profile_image_url %>" /></a>
 	      <span class="timestamp"><%= time_ago_in_words(@twitter_timeline[i].created_at) %> ago</span>
-	      <a href="#"><%= @twitter_timeline[i].user.name %></a>
+	      <a href="http://twitter.com/<%= @twitter_timeline[i].user.screen_name %>"><%= @twitter_timeline[i].user.name %></a>
 		  <p><%= @twitter_timeline[i].text %></p>
 	    </div>
 		<% end %>
