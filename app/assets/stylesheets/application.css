@@ -45,6 +45,7 @@ h1 {
 h2 {
 	font-family: 'Jura', 'Lucida Grande', sans-serif;
 	font-weight: bold;
+	margin: 8px 0 18px 0;
 	color: #5c3b1c;
 	font-size: 20px;
 	text-shadow: 0px 1px 0px #ffffff;
@@ -83,9 +84,14 @@ div.header-container {
 
 div.reservations {
 	color: #ececec;
-	font-family: 'Jura', sans-serif;
+	font-family: 'Jura', 'Lucida Grande', sans-serif;
 	float: right;
 	margin: 20px 37px 0 0;
+}
+
+div.reservations span {
+	color: #ececec;
+	font-family: 'Jura', 'Lucida Grande', sans-serif;
 }
 
 div.find-us-on {
