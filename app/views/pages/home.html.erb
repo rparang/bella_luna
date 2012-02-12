@@ -7,59 +7,77 @@ $(document).ready(function() {
 </script>
 
 <div class="main-pic-container">
-<!--<%= image_tag("site_3_03.png", :alt => "Sample App", :class => "main-pic") %> -->
-
-<div class="slideshow">
-		<%= image_tag("hero_1.png", :alt => "Bruschetta", :class => "main-pic", :width => "879", :height => "417") %>
-		<%= image_tag("hero_2.png", :alt => "Bruschetta", :class => "main-pic", :width => "879", :height => "417") %>
-</div>
-
-	
+  <div class="slideshow">
+    <%= image_tag("hero_1.png", :alt => "Bruschetta", :class => "main-pic", :width => "879", :height => "417") %>
+    <%= image_tag("hero_2.png", :alt => "Bruschetta", :class => "main-pic", :width => "879", :height => "417") %>
+  </div>	
 </div>
   <div class="inner-wrapper">
     <div class="dine-left">
-	  <h1>Come Dine With Us</h1>
-	  <h3>The Food and Restaurant</h3>
-	  <p>Bella Luna Restaurant is the creation of two chefs who want to bring back the essence of Italian food… seasonally-prepared dishes made from the freshest local ingredients. It’s SIMPLE Italian food served with the same warmth and lightheartedness the Italian spirit is known for, all with a modern touch. From antipasti to dessert, each bite is created to delight the palate and each dish combines traditional flavors with contemporary cooking.</p>
+	<!--<h1><%= @twitter_timeline %></h1> -->
+	  <h1><%= t("home.header_one") %></h1>
+	  <h3><%= t("home.subheader_one") %></h3>
+	  <p><%= t("home.text_one") %></p>
 	</div>
     <div class="dine-center">
-      <h3>The Atmosphere</h3>
-	  <p>The modern atmosphere comes to life with an inviting bar featuring an extensive wine list to complement any dish. Live jazz performances on Fridays and Saturdays and patio seating for those summer nights on Market Square complete the quintessential downtown vibe.<br /><br />Bella Luna brings casual elegance and fresh Italian food to downtown Knoxville the way it should be... Simple. Modern. Italian.
-	</p>
+      <h3><%= t("home.subheader_two") %></h3>
+	  <p><%=raw t("home.text_two")%></p>
     </div>
     <div class="dine-right">
-	  <h1>We Cater</h1>
-	  <ul>
-	    <li>Beef ribs ground round andouille, spare ribs pork fatback hamburger venison</li>
-	    <li>Frankfurter bresaola turducken beef, jerky pork belly</li>
-	    <li>Boudin ball tip tenderloin sirloin. Frankfurter ribeye</li>
-	  </ul>
+	  <h1><%= t("home.header_two") %></h1>
+	  <%=raw t("home.text_three") %>
 	</div>
-	<div class="view-menu">
-	  <h1>View Our Menu</h1>
+	<div class="section">
+	  <h1><%= t("home.header_three") %></h1>
 	  <div class="starters">
 		<%= image_tag("JBP-3.png", :alt => "Sample App", :class => "starters-pic") %>
-	    <h2>Antipasti</h2>
+	    <h2><%= t("home.menu_item_one") %></h2>
 		<p>Small plates</p>
 	  </div>
 	  <div class="salads">
 		<%= image_tag("JBP-4.png", :alt => "Sample App", :class => "salads-pic") %>
-	    <h2>Insalate e Zuppe</h2>
+	    <h2><%= t("home.menu_item_two") %></h2>
 	    <p>salad and soups</p>
 	  </div>
 	  <div class="pasta">
 		<%= image_tag("JBP-5.png", :alt => "Sample App", :class => "pasta-pic") %>
-	    <h2>Primi</h2>
+	    <h2><%= t("home.menu_item_three") %></h2>
 		<p>pasta</p>
 	  </div>
 	  <div class="desserts">
 		<%= image_tag("JBP-6.png", :alt => "Sample App", :class => "desserts-pic") %>
-	    <h2>Secundi</h2>
+	    <h2><%= t("home.menu_item_four") %></h2>
 		<p>entree</p>
 	  </div>
+	  <div class="clear"></div>
 	</div>
-	<div class="clear">
+
+<!--Twitter stream and press -->
+
+	<div class="section">
+	  <h1><%= t("home.header_four") %></h1>
+	
+	  <div class="press-container">
+	    <h3>Bella Luna in the Press</h3>
+	  </div>
+	
+	  <div class="twitter-container">
+	    <h3>Twitter</h3>
+		<% 5.times do |i| %>
+	    <div class="twitter-item">
+	      <a href="#"><img src="<%= @twitter_timeline[i].user.profile_image_url %>" /></a>
+	      <span class="timestamp"><%= time_ago_in_words(@twitter_timeline[i].created_at) %> ago</span>
+	      <a href="#"><%= @twitter_timeline[i].user.name %></a>
+		  <p><%= @twitter_timeline[i].text %></p>
+	    </div>
+		<% end %>
+	  </div>
+	  <div class="clear"></div>
 	</div>
+
+	
+	
+	
   </div>
 </div>
 

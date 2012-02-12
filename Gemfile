@@ -1,8 +1,9 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.1'
-
+gem 'jquery-rails'
 gem 'sqlite3', '1.3.4'	
+gem 'twitter', '2.1.0'
 
 group :development do
   gem 'rspec-rails', '2.6.1'
@@ -24,5 +25,3 @@ group :production do
   gem "pg"
   gem 'therubyracer', '~> 0.9.3.beta1'
 end
-
-gem 'jquery-rails'
