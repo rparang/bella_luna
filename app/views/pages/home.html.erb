@@ -16,7 +16,7 @@ $(document).ready(function() {
     <div class="dine-left">
 	  <h1><%= t("home.header_one") %></h1>
 	  <h3><%= t("home.subheader_one") %></h3>
-	  <p><%= t("home.text_one") %></p>
+	  <p><%=raw t("home.text_one") %></p>
 	</div>
     <div class="dine-center">
       <h3><%= t("home.subheader_two") %></h3>
@@ -24,25 +24,26 @@ $(document).ready(function() {
     </div>
     <div class="dine-right">
 	  <h1><%= t("home.header_two") %></h1>
-	  <%=raw t("home.text_three") %>
+	  <h3><%= t("home.subheader_three") %></h3>
+	  <p><%=raw t("home.text_three") %></p>
 	</div>
 	<div class="section">
 	  <h1><%= t("home.header_three") %></h1>
 	  <div class="starters">
 		<%= image_tag("JBP-3.png", :alt => "Sample App", :class => "starters-pic") %>
-	    <h2><%= t("home.menu_item_one") %></h2>
+	    <h3><%= t("home.menu_item_one") %></h3>
 	  </div>
 	  <div class="salads">
 		<%= image_tag("JBP-4.png", :alt => "Sample App", :class => "salads-pic") %>
-	    <h2><%= t("home.menu_item_two") %></h2>
+	    <h3><%= t("home.menu_item_two") %></h3>
 	  </div>
 	  <div class="pasta">
 		<%= image_tag("JBP-5.png", :alt => "Sample App", :class => "pasta-pic") %>
-	    <h2><%= t("home.menu_item_three") %></h2>
+	    <h3><%= t("home.menu_item_three") %></h3>
 	  </div>
 	  <div class="desserts">
 		<%= image_tag("JBP-6.png", :alt => "Sample App", :class => "desserts-pic") %>
-	    <h2><%= t("home.menu_item_four") %></h2>
+	    <h3><%= t("home.menu_item_four") %></h3>
 	  </div>
 	  <div class="clear"></div>
 	</div>
@@ -50,22 +51,27 @@ $(document).ready(function() {
 <!--Twitter stream and press -->
 
 	<div class="section">
-	  <h1><%= t("home.header_four") %></h1>
-	
-	  <div class="press-container">
-	    <h3>Bella Luna in the Press</h3>
-	  </div>
-	
 	  <div class="twitter-container">
-	    <h3>Twitter</h3>
+	    <h2>Twitter</h2>
 		<% 5.times do |i| %>
 	    <div class="twitter-item">
-	      <a href="http://twitter.com/<%= @twitter_timeline[i].user.screen_name %>"><img src="<%= @twitter_timeline[i].user.profile_image_url %>" /></a>
-	      <span class="timestamp"><%= time_ago_in_words(@twitter_timeline[i].created_at) %> ago</span>
-	      <a href="http://twitter.com/<%= @twitter_timeline[i].user.screen_name %>"><%= @twitter_timeline[i].user.name %></a>
-		  <p><%= @twitter_timeline[i].text %></p>
+	      <div class="twitter-image">
+	      	<a href="http://twitter.com/<%= @twitter_timeline[i].user.screen_name %>"><img src="<%= @twitter_timeline[i].user.profile_image_url %>" /></a>
+	  	  </div>
+	  	  <div class="twitter-body">
+		      <span class="timestamp"><%= time_ago_in_words(@twitter_timeline[i].created_at) %> ago</span>
+		      <a href="http://twitter.com/<%= @twitter_timeline[i].user.screen_name %>"><%= @twitter_timeline[i].user.name %></a>
+			  <p><%= @twitter_timeline[i].text %></p>
+		  </div>
 	    </div>
 		<% end %>
+	  </div>
+	  <div class="location-container">
+	    <h2>Location</h2>
+	    <div>
+	    	<p><a target="_blank" href="https://maps.google.com/maps?q=15+Market+Square+Knoxville,+TN+37902&amp;hl=en&amp;sll=37.7577,-122.4376&amp;sspn=0.19136,0.273285&amp;hnear=15+Market+Square+SW,+Knoxville,+Knox,+Tennessee+37902&amp;t=m&amp;z=16">15 Market Square<br />Knoxville, TN 37902</a><br />Phone: 865-247-7405<br />Fax: 865-249-7761</p><br />
+			<iframe width="400" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=15+Market+Square,+Knoxville,+TN&amp;aq=1&amp;sll=37.0625,-95.677068&amp;sspn=67.840216,135.263672&amp;ie=UTF8&amp;hq=&amp;hnear=15+Market+Square+SW,+Knoxville,+Tennessee+37902&amp;t=m&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+	    </div>
 	  </div>
 	  <div class="clear"></div>
 	</div>

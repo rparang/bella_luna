@@ -35,15 +35,16 @@ body {
 }
 
 h1 {
-	font-family: 'Tangerine', 'Palatino Linotype', serif;
+	font-family: 'Georgia', 'Lucida Grande', serif;
 	font-weight: bold;
-	font-size: 36px;
+	font-size: 22px;
 	color: #5c3b1c;
 	text-shadow: 0px 1px 0px #ffffff;
+	margin: 0 0 6px 0;
 }
 
 h2 {
-	font-family: 'Jura', 'Lucida Grande', sans-serif;
+	font-family: 'Georgia', 'Lucida Grande', serif;
 	font-weight: bold;
 	margin: 8px 0 18px 0;
 	color: #5c3b1c;
@@ -52,21 +53,21 @@ h2 {
 }
 
 h3{
-	font-family: 'Jura', 'Lucida Grande', sans-serif;
+	font-family: 'Georgia', 'Lucida Grande', serif;
 	font-weight: bold;
 	color: #545454;
-	font-size: 16px;
+	font-size: 14px;
 	text-shadow: 0px 1px 0px #ffffff;
-	margin-bottom: 20px;
+	margin-bottom: 6px;
 }
 
 li {
-	font-family: 'Jura', 'Lucida Grande', sans-serif;
+	font-family: Helvetica, 'Lucida Grande', sans-serif;
 	font-size: 13px;
 }
 
 p {
-	font-family: 'Jura', 'Lucida Grande', sans-serif;
+	font-family: Helvetica, 'Lucida Grande', sans-serif;
 	color: #656565;
 	font-size: 13px;
 	text-shadow: 0px 1px 0px #ffffff;
@@ -123,11 +124,13 @@ nav {
   border-top: 1px dashed #b4974b;
   border-bottom: 1px dashed #b4974b;
   margin: 30px 20px 0 0;
+  padding: 10px 0 20px 0;
+  white-space: nowrap;
+  width: 544px;
 }
 
 nav {
-  padding: 10px 0 20px 0;
-  white-space: nowrap;
+
 }
 
 nav ul {
@@ -138,13 +141,13 @@ nav ul {
 nav ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 0.2em 0;
+  padding: 0.2em 0 0 20px;
 }
 
 nav ul li a {
   padding: 0 15px 0 15px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   color: #ececec;
   font-family: font-family: 'Jura', 'Lucida Grande', sans-serif;
 
@@ -175,7 +178,6 @@ div.main-wrapper {
 
 div.inner-wrapper {
 	margin: 25px;
-	xborder: 1px solid red;
 }
 
 div.main-pic-container {
@@ -193,8 +195,7 @@ div.dine-left {
 
 div.dine-center {
 	float: left;
-	margin: 53px 0 0 26px;
-	xborder: 1px solid red;
+	margin: 42px 0 0 26px;
 	width: 275px;
 }
 
@@ -202,7 +203,6 @@ div.dine-center {
 
 div.dine-right {
 	float: right;
-	xborder: 1px solid red;
 	width: 275px;
 }
 
@@ -223,7 +223,7 @@ div.section {
 	width: 100%;
 	border-top: 2px dotted #b4974b;
 	padding-top: 15px;
-	margin-bottom: 45px;
+	margin-bottom: 35px;
 	clear: both;
 }
 
@@ -258,7 +258,7 @@ div.clear {
 
 div.twitter-container {
 	width: 410px;
-	xborder: 1px solid red;
+	float: left;
 }
 
 div.twitter-item {
@@ -266,10 +266,11 @@ div.twitter-item {
 	width: 410px;
 	border-top: 1px dashed #B4974B;
 	padding-top: 14px;
+	overflow: auto;
 }
 
 div.twitter-item p {
-	font-size: 13px;
+	font-size: 12px;
 }
 
 div.twitter-item img {
@@ -280,25 +281,40 @@ div.twitter-item img {
 	border: solid 1px #ccc;
 }
 
+.twitter-image, .twitter-body {
+	float: left;
+}
+
+.twitter-body {
+	width: 330px;
+	margin: 1px 0 10px 10px;
+	font-size: 13px;
+}
+.twitter-body a {
+	font-weight: bold;
+}
+
 div.twitter-item span {
 	float: right;
 	font-size: 12px;
 	color: #ababab;
 }
 
-div.press-container {
-	float: right;
+div.location-container {
+	float: left;
 	width: 410px;
-	xborder: 1px solid red;
+	margin-left: 40px;
 }
 
+div.location-container iframe {
+	border: 2px solid #c8b088;
+}
 
 
 
 /*-- Menu Items --*/
 
 div.body-wrapper {
-	xborder: 1px solid red;
 	margin: 25px;
 }
 
@@ -311,7 +327,6 @@ div.menu-wrapper{
 }
 
 div.menu-item {
-	xborder: 1px solid red;
 	margin-bottom: 15px;
 }
 

@@ -5,12 +5,13 @@ en:
   home:
     header_one: "Come Dine With Us"
     subheader_one: "The Food and Restaurant"
-    text_one: "Bella Luna Restaurant is the creation of two chefs who want to bring back the essence of Italian food… seasonally-prepared dishes made from the freshest local ingredients. It’s SIMPLE Italian food served with the same warmth and lightheartedness the Italian spirit is known for, all with a modern touch. From antipasti to dessert, each bite is created to delight the palate and each dish combines traditional flavors with contemporary cooking."
+    text_one: "Bella Luna Restaurant is the creation of two chefs who want to bring back the essence of Italian food… seasonally-prepared dishes made from the freshest local ingredients. It’s <i>simple</i> Italian food served with the same warmth and lightheartedness the Italian spirit is known for, all with a modern touch. From antipasti to dessert, each bite is created to delight the palate and each dish combines traditional flavors with contemporary cooking."
     subheader_two: "The Atmosphere"
     text_two: "The modern atmosphere comes to life with an inviting bar featuring an extensive wine list to complement any dish. Live jazz performances on Fridays and Saturdays and patio seating for those summer nights on Market Square complete the quintessential downtown vibe.<br /><br />Bella Luna brings casual elegance and fresh Italian food to downtown Knoxville the way it should be... Simple. Modern. Italian."
     
     header_two: "We Cater"
-    text_three: "<ul><li>Beef ribs ground round andouille, spare ribs pork fatback hamburger venison</li><li>Frankfurter bresaola turducken beef, jerky pork belly</li><li>Boudin ball tip tenderloin sirloin. Frankfurter ribeye</li></ul>"
+    subheader_three: "Enjoy Bella Luna at your Events"
+    text_three: "Let us cater your next lunch-and-learn, holiday party and special event. Email us at <a href='mailto:catering@bellalunaknox.com'>catering@bellalunaknox.com</a>"
     
     header_three: "View Our Menu"
     menu_item_one: "Antipasti"
