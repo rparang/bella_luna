@@ -8,8 +8,11 @@ $(document).ready(function() {
 
 <div class="main-pic-container">
   <div class="slideshow">
-    <%= image_tag("hero_1.png", :alt => "Bruschetta", :class => "main-pic", :width => "879", :height => "417") %>
-    <%= image_tag("hero_2.png", :alt => "Bruschetta", :class => "main-pic", :width => "879", :height => "417") %>
+  	<%= image_tag("hero_2.png", :alt => "Bruschetta") %>
+    <%= image_tag("hero_1.png", :alt => "Bruschetta") %>
+    <%= image_tag("hero_4.png", :alt => "Bruschetta") %>
+    <%= image_tag("hero_5.png", :alt => "Bruschetta") %>
+    <%= image_tag("hero_3.png", :alt => "Bruschetta") %>
   </div>	
 </div>
   <div class="inner-wrapper">
@@ -30,20 +33,20 @@ $(document).ready(function() {
 	<div class="section">
 	  <h1><%= t("home.header_three") %></h1>
 	  <div class="starters">
-		<%= image_tag("JBP-3.png", :alt => "Sample App", :class => "starters-pic") %>
-	    <h3><%= t("home.menu_item_one") %></h3>
+		<a href="<%= menus_path %>"><%= image_tag("antipasti.png", :alt => "Antipasti") %></a>
+	    <h3>Antipasti</h3>
 	  </div>
 	  <div class="salads">
-		<%= image_tag("JBP-4.png", :alt => "Sample App", :class => "salads-pic") %>
-	    <h3><%= t("home.menu_item_two") %></h3>
+		<a href="<%= menus_path %>"><%= image_tag("insalate.png", :alt => "Insalate e Zuppe") %></a>
+	    <h3>Insalate e Zuppe</h3>
 	  </div>
 	  <div class="pasta">
-		<%= image_tag("JBP-5.png", :alt => "Sample App", :class => "pasta-pic") %>
-	    <h3><%= t("home.menu_item_three") %></h3>
+		<a href="<%= menus_path %>"><%= image_tag("pasta.png", :alt => "Pastas") %></a>
+	    <h3>Pastas</h3>
 	  </div>
 	  <div class="desserts">
-		<%= image_tag("JBP-6.png", :alt => "Sample App", :class => "desserts-pic") %>
-	    <h3><%= t("home.menu_item_four") %></h3>
+		<a href="<%= menus_path %>"><%= image_tag("specialties.png", :alt => "House Specialties") %></a>
+	    <h3>House Specialties</h3>
 	  </div>
 	  <div class="clear"></div>
 	</div>
