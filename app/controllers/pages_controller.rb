@@ -4,10 +4,11 @@ class PagesController < ApplicationController
     twitter_user = "bellalunaknox"
     
     @title = "Home"
-    begin
-      @twitter_timeline = Twitter.user_timeline(twitter_user)
-    rescue
-    end
+    
+    #begin
+    #  @twitter_timeline = Twitter.user_timeline(twitter_user)
+    #rescue
+    #end
     #make a rescue!
   end
   

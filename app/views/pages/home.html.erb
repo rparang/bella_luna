@@ -54,21 +54,6 @@ $(document).ready(function() {
 <!--Twitter stream and press -->
 
 	<div class="section">
-	  <div class="twitter-container">
-	    <h2>Twitter</h2>
-		<% 5.times do |i| %>
-	    <div class="twitter-item">
-	      <div class="twitter-image">
-	      	<a href="http://twitter.com/<%= @twitter_timeline[i].user.screen_name %>"><img src="<%= @twitter_timeline[i].user.profile_image_url %>" /></a>
-	  	  </div>
-	  	  <div class="twitter-body">
-		      <span class="timestamp"><%= time_ago_in_words(@twitter_timeline[i].created_at) %> ago</span>
-		      <a href="http://twitter.com/<%= @twitter_timeline[i].user.screen_name %>"><%= @twitter_timeline[i].user.name %></a>
-			  <p><%= @twitter_timeline[i].text %></p>
-		  </div>
-	    </div>
-		<% end %>
-	  </div>
 	  <div class="location-container">
 	    <h2>Location</h2>
 	    <div>

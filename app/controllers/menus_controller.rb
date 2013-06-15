@@ -11,7 +11,7 @@ class MenusController < ApplicationController
     @category_beverages = Menu.where(:category => 'Beverages')
     @category_dolci = Menu.where(:category => 'Dolci')
     @category_cocktails = Menu.where(:category => 'Cocktails')
-    @twitter_timeline = Twitter.user_timeline("bellalunaknox").first.text
+    #@twitter_timeline = Twitter.user_timeline("bellalunaknox").first.text
 
     respond_to do |format|
       format.html # index.html.erb
